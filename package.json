@@ -1,0 +1,28 @@
+{
+  "name": "bankapi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Judekennywise/bankAPI.git"
+  },
+  "author": "Jude",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Judekennywise/bankAPI/issues"
+  },
+  "homepage": "https://github.com/Judekennywise/bankAPI#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.0",
+    "validator": "^13.11.0"
+  }
+}
