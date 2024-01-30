@@ -293,8 +293,8 @@ router.post('/create-pin',middleware.authenticate, userController.create_pin);
  *               status: fail
  *               message: Unauthorized. User not authenticated.
  */
-router.get('/all-users', userController.get_all_users)
+router.get('/all-users', userController.get_all_users);
 
-router.get('',userController.auth);
+router.get('/',middleware.authenticate,userController.auth);
 
 module.exports = router;

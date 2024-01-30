@@ -16,8 +16,8 @@ const options = {
       },
       servers: [
         {
-          url: "http://localhost:3000",
-          description: "development server"
+          url: "https://bank-api-heuw.onrender.com",
+          description: "live server"
         },
       ]
     },
