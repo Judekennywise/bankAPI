@@ -21,6 +21,15 @@ exports.get_all_users = async (req, res) => {
 
 exports.signup = async (req, res, next) => {
     try {
+      // Check if User Exists
+      const existingUser = await User.findOne({ email: req.body.email });
+      if (existingUser) {
+        return res.status(400).json({
+          status: "fail",
+          message: "Email already exists. Please use a different email.",
+        });
+      }
+      
       const newUser = await User.create({
         firstname: req.body.firstname,
         lastname: req.body.lastname,
