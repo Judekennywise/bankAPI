@@ -6,7 +6,7 @@ const options = {
       openapi: '3.0.0',
       info: {
         title: ' Bank API',
-        description: "A RESTful API for a bank aoo where users can create account, get a unique account number, deposit money, and transfer money between accounts.",
+        description: "A RESTful API for a bank app where users can create account, get a unique account number, deposit money, and transfer money between accounts.",
         contact: {
           name: "Jude Oyedele",
           email: "judeokennywise@gmail.com",
